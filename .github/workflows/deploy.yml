@@ -63,4 +63,4 @@ jobs:
           kubectl set image deployment/$DEPLOYMENT_NAME \
           $CONTAINER_NAME=$IMAGE_URI
           
-          kubectl rollout status deployment/$DEPLOYMENT_NAME
+          kubectl rollout restart deployment/$DEPLOYMENT_NAME
